@@ -1,2 +1,2 @@
 # projectA3
-A3 Unidade Curricular Programação de Soluções Computacionais 2025.1
+A3 Unidade Curricular Sistemas Computacionais e Segurança 2025.2
