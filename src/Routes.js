@@ -1,6 +1,5 @@
-import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-
+import Alerta from './pages/Alerta'
 import Ulife from './pages/Ulife'
 import Seguranca from './pages/Seguranca'
 
@@ -9,6 +8,7 @@ function Rotas() {
     <Routes>
       <Route path="/" element={<Ulife />} />
       <Route path="/seguranca" element={<Seguranca />} />
+      <Route path="/alerta" element={<Alerta />} />
     </Routes>
   )
 }

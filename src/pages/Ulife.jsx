@@ -1,5 +1,4 @@
-import React from "react";
-import "../styles/ulife.css";
+import "../styles/style.css";
 import { useNavigate } from "react-router-dom";
 
 function Ulife() {
@@ -8,7 +7,7 @@ function Ulife() {
     <div id="loginUlife">
           <div className="logoCircle"></div>
           <div className="mb-3 mx-auto p-4 custom-rounded">
-            <h1>Acesse seu Ulife</h1>
+            <h1 id="ulifeText">Acesse seu Ulife</h1>
             <label className="form-label">Login</label>
             <input type="email" className="form-control" placeholder="@ulife.com.br" />
 
