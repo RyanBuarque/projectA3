@@ -6,7 +6,12 @@ import Rotas from './Routes'
 function App() {
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className="app" style={{
+          maxWidth: "400px",
+          margin: "0 auto",
+          width: "100%",
+          overflowX: "hidden"
+        }}>
           <Rotas />
       </div>
     </BrowserRouter>
