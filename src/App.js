@@ -8,6 +8,7 @@ function App() {
     <BrowserRouter>
       <div className="app" style={{
           maxWidth: "400px",
+          
           margin: "0 auto",
           width: "100%",
           overflowX: "hidden"
