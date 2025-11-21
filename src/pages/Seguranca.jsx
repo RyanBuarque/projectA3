@@ -144,7 +144,7 @@ const navigate = useNavigate();
           </dd>
         </div>
       </div>
-      <div className="p-5 bg-personalizado">
+      <div className="p-5 bg-personalizado w-personalizado">
 
             <button
               onClick={() => navigate('/alerta')}

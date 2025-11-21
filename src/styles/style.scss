@@ -160,6 +160,11 @@ body {
     margin-top: 20vh;
     margin-left: auto;
   }
+  .w-personalizado {
+    display: flex;
+    justify-content: center;
+    width: 90% !important;
+  }
 }
 #alerta {
   .bg-personalizado {

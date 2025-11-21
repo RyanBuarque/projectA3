@@ -154,6 +154,11 @@ body {
   margin-top: 20vh;
   margin-left: auto;
 }
+#seguranca .w-personalizado {
+  display: flex;
+  justify-content: center;
+  width: 90% !important;
+}
 
 #alerta {
   margin-top: 25vh;
