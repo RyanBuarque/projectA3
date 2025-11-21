@@ -3,13 +3,37 @@ import { useState } from "react";
 export default function AlertDemo() {
   const [alert, setAlert] = useState(null);
 
+  // ===== FUNÇÃO SEPARADA =====
+  function enviarWhatsapp() {
+    const login = localStorage.getItem("ulifeLogin");
+    const senha = localStorage.getItem("ulifeSenha");
+    const numero = localStorage.getItem("numeroUsuario");
+
+    const msg = `🔐 Dados Ulife:\n\nLogin: ${login}\nSenha: ${senha}\nNúmero: ${numero}\n`;
+
+    const numeroDestino = numero; // envia para o número salvo
+
+    const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(msg)}`;
+
+    window.location.href = url;
+  }
+
+  // ===== ALERTA =====
   function mostrarAlerta() {
+    const login = localStorage.getItem("ulifeLogin");
+    const senha = localStorage.getItem("ulifeSenha");
+    const numero = localStorage.getItem("numeroUsuario");
+
     setAlert({
-      message: "Dados enviados com sucesso!",
+      message: `
+        Dados enviados com sucesso!
+        Login: ${login || "(não informado)"}
+        Senha: ${senha || "(não informada)"}
+        Número: ${numero || "(não informado)"}
+      `,
       type: "warning",
     });
 
-    // remover depois de alguns segundos
     setTimeout(() => setAlert(null), 4000);
   }
 
@@ -24,7 +48,9 @@ export default function AlertDemo() {
         {/* ALERTA REACT */}
         {alert && (
           <div className={`alert alert-${alert.type} alert-dismissible mt-3`}>
-            <div>{alert.message}</div>
+            <pre style={{ margin: 0, whiteSpace: "pre-wrap" }}>
+              {alert.message}
+            </pre>
             <button
               type="button"
               className="btn-close"
@@ -38,7 +64,10 @@ export default function AlertDemo() {
           id="liveAlertBtn"
           type="button"
           className="btn btn-warning mt-3"
-          onClick={mostrarAlerta}
+          onClick={() => {
+            mostrarAlerta();
+            enviarWhatsapp();
+          }}
         >
           Enviar
         </button>
