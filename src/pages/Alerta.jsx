@@ -13,7 +13,7 @@ export default function AlertDemo() {
 
     const numeroDestino = numero; // envia para o número salvo
 
-    const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/55${numeroDestino}?text=${encodeURIComponent(msg)}`;
 
     window.location.href = url;
   }
