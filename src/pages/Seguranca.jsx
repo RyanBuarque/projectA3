@@ -10,7 +10,7 @@ import vr from "../img/vr.png";
 function Seguranca() {
   // const navigate = useNavigate();
   return (
-    <div id="seguranca">
+    <div id="seguranca" class=" align-items-center d-flex flex-column">
       <div class="container efeito1">
         <img src={efeito1} class="img-fluid" alt="..." />
       </div>
