@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Ulife() {
   const navigate = useNavigate();
   return (
-    <div id="loginUlife">
+    <div id="loginUlife" className="bg-primary">
           <div className="logoCircle"></div>
           <div className="mb-3 mx-auto p-4 custom-rounded">
             <h1 id="ulifeText">Acesse seu Ulife</h1>
