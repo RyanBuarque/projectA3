@@ -5,10 +5,10 @@ import notebook from "../img/notebook.png";
 import teclado from "../img/teclado.png";
 import vr from "../img/vr.png";
 
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Seguranca() {
-  // const navigate = useNavigate();
+const navigate = useNavigate();
   return (
     <div id="seguranca" class=" align-items-center d-flex flex-column">
       <div class="container efeito1">
@@ -144,6 +144,16 @@ function Seguranca() {
           </dd>
         </div>
       </div>
+      <div className="p-5 bg-personalizado">
+
+            <button
+              onClick={() => navigate('/alerta')}
+              type="button"
+              className="btn btn-danger"
+            >
+              Alerta
+            </button>
+          </div>
     </div>
   );
 }

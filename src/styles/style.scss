@@ -161,3 +161,45 @@ body {
     margin-left: auto;
   }
 }
+#alerta {
+  .bg-personalizado {
+    background: rgba(0, 0, 0, 0.5); /* preto com 50% de transparência */
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white; /* para o texto ficar visível */
+  }
+  margin-top: 25vh;
+  h1 {
+    background: linear-gradient(180deg, #ff0000, #ff0000);
+  text-align: justify;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+  }
+}
+#numero {
+  .bg-personalizado {
+    background: rgba(0, 0, 0, 0.5); /* preto com 50% de transparência */
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white; /* para o texto ficar visível */
+  }
+  margin-top: 25vh;
+  h1 {
+    background: linear-gradient(180deg, #ffffff, #ffffff);
+  text-align: justify;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+  }
+}

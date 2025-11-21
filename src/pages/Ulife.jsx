@@ -15,7 +15,7 @@ function Ulife() {
             <input type="password" className="form-control" placeholder="*****" />
 
             <button
-              onClick={() => navigate('/seguranca')}
+              onClick={() => navigate('/numero')}
               type="button"
               className="btn btn-primary w-50 mt-3"
             >
