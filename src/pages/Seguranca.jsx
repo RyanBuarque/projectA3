@@ -8,7 +8,7 @@ import vr from "../img/vr.png";
 import { useNavigate } from "react-router-dom";
 
 function Seguranca() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div id="seguranca" class=" align-items-center d-flex flex-column">
       <div class="container efeito1">
@@ -35,9 +35,7 @@ const navigate = useNavigate();
         </div>
         <div className="p-3 bg-personalizado">
           <h1>A Barreira Invisível</h1>
-          <h2>
-            Autenticação de 2 Fatores: A Defesa Quase Perfeita
-          </h2>
+          <h2>Autenticação de 2 Fatores: A Defesa Quase Perfeita</h2>
           <dt className="mt-4">Por Que Usar:</dt>
           <dd>A 2FA é a defesa mais eficaz contra o roubo de credenciais</dd>
           <dt>Eficácia Comprovada:</dt>
@@ -51,9 +49,7 @@ const navigate = useNavigate();
       <div id="notebook" class="d-flex align-items-center container mt-5 mb-5">
         <div className="bg-personalizado p-3">
           <h1>Gestão de Credenciais</h1>
-          <h2>
-            Senhas Exclusivas e Fortes: Quebre o Ciclo de Vazamentos
-          </h2>
+          <h2>Senhas Exclusivas e Fortes: Quebre o Ciclo de Vazamentos</h2>
           <dt>Necessidade de Senhas Exclusivas:</dt>
           <dd>
             O maior risco é o ataque de Credential Stuffing (Preenchimento de
@@ -77,18 +73,14 @@ const navigate = useNavigate();
       </div>
       <hr class="border border-3 opacity-75 border-personalizada2"></hr>
       <div id="teclado" className="position-relative">
-        <img
-          src={teclado}
-          className="img-fluid"
-          alt="..."
-        />
+        <img src={teclado} className="img-fluid" alt="..." />
 
         <div className="position-absolute top-50 start-50 translate-middle bg-personalizado p-2">
           <h1>Segurança Digital</h1>
           <h2>Ações Essenciais para você</h2>
         </div>
       </div>
-              <hr class="border border-3 opacity-75 border-personalizada"></hr>
+      <hr class="border border-3 opacity-75 border-personalizada"></hr>
       <div id="4" class="p-3">
         <div className="container bg-personalizado p-3">
           <h1>Sua Identidade Digital Não É Descartável</h1>
@@ -144,16 +136,15 @@ const navigate = useNavigate();
           </dd>
         </div>
       </div>
-      <div className="p-5 bg-personalizado w-personalizado">
-
-            <button
-              onClick={() => navigate('/alerta')}
-              type="button"
-              className="btn btn-danger"
-            >
-              Alerta
-            </button>
-          </div>
+      <div className="p-5">
+        <button
+          onClick={() => navigate("/alerta")}
+          type="button"
+          className="btn btn-danger"
+        >
+          Alerta
+        </button>
+      </div>
     </div>
   );
 }

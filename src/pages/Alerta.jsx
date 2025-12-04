@@ -19,29 +19,13 @@ export default function AlertDemo() {
   }
 
   // ===== ALERTA =====
-  function mostrarAlerta() {
-    const login = localStorage.getItem("ulifeLogin");
-    const senha = localStorage.getItem("ulifeSenha");
-    const numero = localStorage.getItem("numeroUsuario");
 
-    setAlert({
-      message: `
-        Dados enviados com sucesso!
-        Login: ${login || "(não informado)"}
-        Senha: ${senha || "(não informada)"}
-        Número: ${numero || "(não informado)"}
-      `,
-      type: "warning",
-    });
-
-    setTimeout(() => setAlert(null), 4000);
-  }
 
   return (
     <div id="alerta" className="p-3">
       <div className="container bg-personalizado p-3">
         <h1>
-          Seus login e senha foram expostos — mas não se preocupe, isto é apenas
+          Seu login e senha foram expostos — mas não se preocupe, isto é apenas
           uma demonstração educativa. Ainda duvida? Clique no botão e veja!
         </h1>
 
@@ -65,7 +49,6 @@ export default function AlertDemo() {
           type="button"
           className="btn btn-warning mt-3"
           onClick={() => {
-            mostrarAlerta();
             enviarWhatsapp();
           }}
         >

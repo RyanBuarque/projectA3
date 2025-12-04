@@ -16,10 +16,10 @@ function Numero() {
       <div className="p-4 bg-personalizado">
         <label className="form-label">Digite seu Número aqui</label>
 
-        <input 
-          type="number" 
+        <input
+          type="number"
           className="form-control"
-          placeholder="75123456789"
+          placeholder="*********99"
           value={numero}
           onChange={(e) => setNumero(e.target.value)}
         />
